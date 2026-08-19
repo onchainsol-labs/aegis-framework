@@ -1,0 +1,12 @@
+{
+  "name": "packet-assets",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "generate": "node render.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}

@@ -1,0 +1,41 @@
+🔱 Aegis
+
+Infrastructure.
+
+The secure application framework for Solana.
+
+It's job is to make building Solana programs/applications easier, safer, and more productive, while still allowing low-level control.
+
+
+🧧 Packet
+
+The product/business.
+
+Money Worth Opening.
+
+Its job is to turn multi-person money distribution into a social experience—giveaways, communities, creators, events, etc.
+
+
+And the relationship is clean:
+
+                    AEGIS 🔱
+              Build the machinery
+                       │
+                       ▼
+                  PACKET 🧧
+             Build the real product
+                       │
+                       ▼
+                 Real users
+                       │
+                       ▼
+               Real problems
+                       │
+                       ▼
+                Better Aegis
+                       │
+                       └───────────↻
+
+Aegis → technical specification → repository → V0 architecture → build. 🔱
+
+And Packet stays waiting as the first serious thing we feed through it. 😂🧧

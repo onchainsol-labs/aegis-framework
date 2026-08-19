@@ -1,0 +1,19 @@
+# Secrets — never commit
+.env
+.env.local
+.env.example
+*-keypair.json
+*.pem
+
+# Dependencies
+node_modules/
+target/
+
+# OS
+.DS_Store
+._*
+
+# Build
+dist/
+build/
+.anchor/

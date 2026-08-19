@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@11.11.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "test": "vitest run",
+    "db:setup": "tsx scripts/setup.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "hono": "^4.6.14",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/pg": "^8.11.10",
+    "tsx": "^4.19.2",
+    "typescript": "~6.0.2",
+    "vitest": "^3.0.5"
+  }
+}

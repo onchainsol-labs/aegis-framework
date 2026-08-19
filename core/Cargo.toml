@@ -1,0 +1,13 @@
+[package]
+name = "aegis-core"
+version = "0.1.0"
+edition = "2021"
+description = "Aegis Core — the secure application framework for Solana"
+license = "ISC"
+
+[dependencies]
+borsh = { version = "1.8", default-features = false, features = ["derive"] }
+solana-program = "2.3"
+
+[dev-dependencies]
+sha2 = "0.10"

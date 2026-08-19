@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette — see brand.md */
+  --color-envelope: #e13a2f;
+  --color-envelope-deep: #b92a21;
+  --color-gold: #f5b842;
+  --color-gold-soft: #fbe3b3;
+  --color-cream: #fff7ec;
+  --color-ink: #1f1b16;
+  --color-ink-soft: #6b6257;
+
+  --font-sans: "Nunito", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+
+  --shadow-envelope: 0 16px 40px -16px rgb(225 58 47 / 0.5);
+  --shadow-card: 0 10px 30px -12px rgb(31 27 22 / 0.18);
+  --shadow-float: 0 12px 28px -8px rgb(225 58 47 / 0.45);
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Safety net: kill all motion for users who ask for it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* The big number inputs in the create flow shouldn't show spinners */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Buttons: real focus rings, never removed */
+:where(button, a, [role="button"]):focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 2px;
+  border-radius: 0.5rem;
+}
+
+/* Slim, soft scrollbars — native ones look chunky on the cream background */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(31 27 22 / 0.25) transparent;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(31 27 22 / 0.25);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(31 27 22 / 0.4);
+}

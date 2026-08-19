@@ -1,0 +1,5 @@
+allowBuilds:
+  bufferutil: true
+  utf-8-validate: true
+minimumReleaseAgeExclude:
+  - '@onchainlab/siws@0.2.0'

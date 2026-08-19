@@ -1,0 +1,5 @@
+# Build output
+/target
+/examples/*/target
+
+# Cargo.lock IS committed (program crates need reproducible builds)
