@@ -1,0 +1,7 @@
+# Foundry build artifacts
+out/
+cache/
+broadcast/
+
+# Dependencies (pulled by forge install — not part of the repo)
+lib/
