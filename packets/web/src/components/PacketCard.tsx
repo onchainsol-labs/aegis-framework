@@ -68,7 +68,7 @@ export function PacketCard({ packet, view, onShare, onRefund }: PacketCardProps)
             <button
               type="button"
               onClick={() => onShare?.(packet)}
-              className="inline-flex flex-1 items-center justify-center gap-2 rounded-2xl bg-envelope px-4 py-3 text-sm font-extrabold text-cream transition-colors hover:bg-envelope-deep active:scale-[0.98]"
+              className="inline-flex flex-1 items-center justify-center gap-2 rounded-2xl border-2 border-envelope bg-white px-4 py-3 text-sm font-extrabold text-envelope transition-colors hover:bg-envelope/5 active:scale-[0.98]"
             >
               <Share2 className="h-4 w-4" aria-hidden="true" />
               Share

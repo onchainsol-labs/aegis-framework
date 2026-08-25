@@ -120,7 +120,7 @@ export function Home() {
                 </p>
                 <Link
                   to="/create"
-                  className="mt-4 inline-flex items-center gap-2 rounded-2xl bg-envelope px-5 py-3 text-sm font-extrabold text-cream shadow-float transition-colors hover:bg-envelope-deep active:scale-[0.98]"
+                  className="mt-4 inline-flex items-center gap-2 rounded-2xl border-2 border-envelope bg-white px-5 py-3 text-sm font-extrabold text-envelope transition-colors hover:bg-envelope/5 active:scale-[0.98]"
                 >
                   <Plus className="h-4 w-4" aria-hidden="true" /> Drop a Packet
                 </Link>
@@ -169,7 +169,7 @@ export function Home() {
       {/* Big drop CTA */}
       <Link
         to="/create"
-        className="mx-auto flex w-full max-w-md items-center justify-center gap-2 rounded-2xl bg-envelope px-6 py-3.5 text-base font-black text-cream shadow-float transition-all hover:bg-envelope-deep active:scale-[0.99] sm:py-4 sm:text-lg"
+        className="mx-auto flex w-full max-w-md items-center justify-center gap-2 rounded-2xl bg-ink px-6 py-3.5 text-base font-black text-cream shadow-lg transition-all hover:bg-black active:scale-[0.99] sm:py-4 sm:text-lg"
       >
         <Plus className="h-5 w-5" aria-hidden="true" />
         Drop a Packet
