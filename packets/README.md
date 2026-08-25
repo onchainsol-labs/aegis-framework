@@ -24,6 +24,7 @@ packets/
 │   ├── BLINKS-ACTIONS.md← Solana Actions & Blinks roadmap
 │   └── UI-MOCKUPS.md    ← wireframes + design direction
 ├── program/             ← Anchor Solana program
+├── contract/            ← EVM (Base) Solidity port — same logic, instance-per-chain
 ├── sdk/                 ← shared TS SDK (web + mobile)
 ├── web/                 ← Vite + React app
 ├── api/                 ← Hono server (OG previews + Blinks)
